@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Notícias ETEC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com Menu Flexbox e Hamburguer Responsivo -->
+  <header class="topo-site">
+    <nav class="menu-principal">
+      <h1 class="logo">GAMES HELP</h1>
+
+      <!-- Controle do Menu Hambúrguer (CSS puro) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="links-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#noticias">Dicas</a></li>
+        <li><a href="#newsletter">Principais notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal com CSS Grid -->
+  <main class="container-principal" id="noticias">
+    <h2 class="titulo-secao">Destaques dos games</h2>
+
+    <div class="grade-portal">
+      <!-- Notícia em Destaque Principal -->
+      <article class="card-noticia destaque-principal">
+        <span class="tag-categoria">Plataforma de jogos</span>
+        <h3>Busque váriedade</h3>
+        <p>Independentemente da sua preferência de plataformas sempre é bom você procurar jogos em outas plataformas.</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <!-- Notícias Secundárias -->
+      <article class="card-noticia">
+        <span class="tag-categoria">Dicas</span>
+        <h3>Para um desempenho nos jogos sempre procurem aquecer antes de jogar</h3>
+        <p>Ao ir jogar esquente as suas mãos para deixa-lá mais solta e menos rígita, te tornando mais ágil.</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <article class="card-noticia">
+        <span class="tag-categoria">Principais notícias</span>
+        <h3>Games em processo de crição</h3>
+        <p>Gow Of War está prestes a sair o seu terceiro jogo após "Gow of War 3"</p>
+        <a href="#" class="btn-leia-mais">Leia mais</a>
+      </article>
+
+      <!-- Barra Lateral -->
+      <aside class="barra-lateral">
+        <h3>Mais Lidas</h3>
+        <ol class="lista-populares">
+          <li><a href="#">Melhores jogos free do ano</a></li>
+          <li><a href="#">Como melhorar a sua jogabilidade</a></li>
+          <li><a href="#">Vale a pena guardar dinheiro para comprar o GTA IV</a></li>
+          <li><a href="#">The last of us VS Red dead repection</a></li>
+        </ol>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Seção de Formulário (Newsletter) -->
+  <section class="secao-newsletter" id="newsletter">
+    <div class="container-newsletter">
+      <h2>Receba as Notícias em Primeira Mão</h2>
+      <p>Cadastre seu e-mail para receber boletins diários com as principais novidades dos games.</p>
+
+      <form class="form-newsletter">
+        <div class="campo-grupo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <button type="submit" class="btn-enviar">Inscrever-se</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-site" id="contato">
+    <p>&copy; 2026 Portal de Notícias GAMES - Todos os direitos reservados.</p>
+    <p>Desenvolvido na disciplina de Programação Web 1.</p>
+  </footer>
+
+</body>
+</html>
